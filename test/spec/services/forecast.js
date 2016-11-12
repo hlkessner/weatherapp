@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: current', function () {
+describe('Service: forecast', function () {
 
   // load the service's module
   beforeEach(module('weatherapp'));
 
   // instantiate service
-  var current;
-  beforeEach(inject(function (_current_) {
-    current = _current_;
+  var forecast;
+  beforeEach(inject(function (_forecast_) {
+    forecast = _forecast_;
   }));
 
   it('should do something', function () {
-    expect(!!current).toBe(true);
+    expect(!!forecast).toBe(true);
   });
 
 });
