@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the yourApp
  */
- angular.module('weatherapp')
+angular.module('weatherapp')
   .controller('MainCtrl', function ($scope, citysearch, $localStorage) {
     $scope.citiesFound = citysearch.find();
     $scope.storage = $localStorage;

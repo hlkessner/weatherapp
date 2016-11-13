@@ -9,7 +9,7 @@
  * Main module of the application.
  */
  angular
-   .module('test3App', [
+   .module('weatherapp', [
      'ngAnimate',
      'ngAria',
      'ngCookies',
