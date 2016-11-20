@@ -1,7 +1,13 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+//@import "variables"; // Override default Bootstrap values.
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+//@import "content";
+//@import "buttons";
+@import "_transitions";
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -34,20 +40,20 @@ body {
     margin-bottom: 0;
     line-height: 50px;
     padding-bottom: 19px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Amatic SC', cursive;
   }
 }
 h1 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 60px;
   text-align: center;
 }
 h2 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 dd,
 dt {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 30px;
   text-align: center;
 }
@@ -55,13 +61,18 @@ dl {
   background-color: rgba(245, 245, 245, 1)
 }
 p {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 25px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
 }
 a {
   style: none;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 25px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+//Added animation to the saved city warning alert
+p.city-saved-alert.bg-warning.text-warning {
+  animation-name: shake;
+  animation-duration: 1s;
 }
 /* Custom page footer */
 .footer {
@@ -81,7 +92,7 @@ a {
 
   .btn
    {
-    font-size: 21px;
+    font-size: 28px;
     padding: 14px 24px;
 
   }
@@ -92,8 +103,8 @@ a {
   margin: 40px 0;
 
   p + h4 {
-    margin-top: 28px;
-    font-family: 'Shadows Into Light', cursive;
+    margin-top: 30px;
+    font-family: 'Amatic SC', cursive;
   }
 }
 
