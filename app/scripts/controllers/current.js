@@ -14,7 +14,6 @@
      $scope.currentWeather = current.query({
          cityID: $routeParams.cityID
        });
-       
 $scope.saveCity = function(city){
     var cityData = {
         'name': city.name,
@@ -47,5 +46,11 @@ $scope.saveCity = function(city){
         }
     }
 };
-
-});
+$scope.CurrentWeather = {
+          forecast: {
+              icon: 'partly-cloudy-night',
+              iconSize: 100,
+              color: 'blue',
+          }
+        };
+   });

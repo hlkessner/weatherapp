@@ -19,3 +19,4 @@ angular.module('weatherapp')
         $scope.searchQuery = $scope.location;
     };
   });
+  
