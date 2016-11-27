@@ -19,9 +19,6 @@
      'ngSanitize',
      'ngStorage', // added to enable localStorage features
      'ngTouch',
-     'weatherapp.controllers',
-     'weatherap.filters',
-     'weatherap.services',
      // 3rd party dependencies
      'angular-skycons'
    ])

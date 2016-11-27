@@ -1,4 +1,3 @@
-
 <h1>5-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
 <dl ng-repeat="prediction in forecastData.list" class="weather-forecast">
     <dt>Forecast for {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
@@ -6,7 +5,7 @@
     <dd>{{prediction.weather[0].description}}</dd>
     <dt>Temperature</dt>
     <dd>Min: {{prediction.temp.min}} &deg;F Max: {{prediction.temp.max}} &deg;F</dd>
-    <owm-icon id="{{ condition.id }}"></owm-icon>
+    <div class='forecast'></div>
 </dl>
 
 <p><a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
