@@ -6,7 +6,7 @@ angular.module('weatherapp')
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&APPID=7f8a8132d6e9c4269de7689197e96096', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&units=imperial&APPID=7f8a8132d6e9c4269de7689197e96096', {}, {
       find: {
         method: 'GET',
         params: {

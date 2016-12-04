@@ -46,11 +46,27 @@ $scope.saveCity = function(city){
         }
     }
 };
-$scope.CurrentWeather = {
-          forecast: {
-              icon: 'partly-cloudy-night',
-              iconSize: 100,
-              color: 'blue',
-          }
-        };
+$scope.mapskycon = function(text) {
+  if (text === "Rain") {
+    return "rain";
+  } else if(text === "Snow") {
+    return "snow";
+ } else if(text === "Sleet") {
+   return "sleet";
+ } else if(text === "Wind") {
+   return "wind";
+ } else if(text === "Clear"){
+   return "clear-day";
+ } else if(text === "Fog") {
+   return "fog";
+ } else if(text === "Cloudy") {
+   return "cloudy";
+ } else if(text === "Partly Cloudy") {
+   return "partly-cloudy-day";
+ } else {
+   return "clear-day";
+
+  //else **default icon**
+}
+};
    });

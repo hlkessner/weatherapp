@@ -14,17 +14,27 @@
      $scope.forecastData = forecast.query({
          cityID: $routeParams.cityID
      });
-     var icons = new Skycons({"color": "#fff"}),
-          list  = [
-            "clear-day", "clear-night", "partly-cloudy-day",
-            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
-            "fog"
-          ],
-          i;
+     $scope.mapskycon = function(text) {
+       if (text === "Rain") {
+         return "rain";
+       } else if(text === "Snow") {
+         return "snow";
+      } else if(text === "Sleet") {
+        return "sleet";
+      } else if(text === "Wind") {
+        return "wind";
+      } else if(text === "Clear"){
+        return "clear-day";
+      } else if(text === "Fog") {
+        return "fog";
+      } else if(text === "Cloudy") {
+        return "cloudy";
+      } else if(text === "Partly Cloudy") {
+        return "partly-cloudy-day";
+      } else {
+        return "clear-day";
 
-      for(i = list.length; i--; )
-      {  icons.set(list[i], list[i]);
-
-      icons.play();
-    }
+       //else **default icon**
+     }
+   };
    });

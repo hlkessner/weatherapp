@@ -7,7 +7,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 //@import "content";
 //@import "buttons";
 @import "_transitions";
-@import "weather-icons.min";
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -31,10 +31,23 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(250, 250, 250, 1);
   margin-bottom: 10px;
+.btn{
+  font-size: 40px;
+  padding: 14px 24px;
+
+}
 
   /* Make the masthead heading the same height as the navigation */
+  h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Amatic SC', cursive;
+  }
   h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -43,22 +56,30 @@ body {
     font-family: 'Amatic SC', cursive;
   }
 }
-h1 {
-  font-family: 'Amatic SC', cursive;
-  font-size: 60px;
-  text-align: center;
+
+ul {
+  list-style-type: none;
 }
-h2 {
-  font-family: 'Amatic SC', cursive;
-}
+/*Styles the text on the forecast page*/
 dd,
 dt {
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
 }
 dl {
-  background-color: rgba(245, 245, 245, 1)
+  background-color: rgba(250, 250, 250, 0.8);
+
+}
+div.jumbotron.ng-scope {
+  text-align: center;
+}
+
+/*styles the eather forecast cards*/
+dl.weather-forecast.ng-scope {
+  display: inline-block;
+  width: 30%;
+  margin-right: 20px;
 }
 p {
   font-family: 'Amatic SC', cursive;
@@ -69,6 +90,12 @@ a {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
 }
+canvas {
+  margin-left: 41%
+  padding: 0px;
+}
+
+
 //Added animation to the saved city warning alert
 p.city-saved-alert.bg-warning.text-warning {
   animation-name: shake;
@@ -87,20 +114,14 @@ p.city-saved-alert.bg-warning.text-warning {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
+  /*text-align: center; */
   border-bottom: 1px solid #e5e5e5;
 
-  .btn
-   {
-    font-size: 28px;
-    padding: 14px 24px;
-
-  }
-}
 
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
+}
 
   p + h4 {
     margin-top: 30px;
